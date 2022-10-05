@@ -73,21 +73,22 @@ class _CategoryPageState extends State<CategoryPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[900],
+      appBar: AppBar(
+        title: Text('HMZ NewZ',
+          style: TextStyle(
+            fontFamily: 'Neucha',
+            fontWeight: FontWeight.bold,
+            fontSize: 32,
+          ),),
+        centerTitle: true,
+        backgroundColor: Colors.black87,
+      ),
       body: SingleChildScrollView(
       child: Container(
       child: Column(
 
       children: [
-    AppBar(
-    title: Text('HMZ NewZ',
-      style: TextStyle(
-        fontFamily: 'Neucha',
-        fontWeight: FontWeight.bold,
-        fontSize: 32,
-      ),),
-    centerTitle: true,
-    backgroundColor: Colors.black87,
-    ),
+
     SizedBox(height: 10),
         //navbar
         Container(
